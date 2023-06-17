@@ -1,0 +1,80 @@
+header{
+    overflow: hidden;
+    padding-top: 7rem;
+    height: 110vh;
+}
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* PDA */
+.cta{
+    margin-top: 2.6rem;
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+}
+.header__social{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.7rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+    font-size: 25px;
+}
+.header__social::after{
+    content: ' ';
+    width: 2px;
+    height: 2rem;
+    background: rgb(238, 238, 248);
+}
+  
+ /* Header Image */
+ .profile-me{
+    background: linear-gradient(rgb(106, 120, 200),transparent);
+    height: 32rem;
+    width: 23rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 3rem;
+    border-radius: 12rem 11rem 0 0;
+    overflow: hidden;
+    padding: 3rem 1rem 1rem 1rem;
+ }
+
+ /* Scroll Down */
+ .scroll__down{
+    position: absolute;
+    right: -2.6rem;
+    bottom: 6rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 1rem;
+ }
+
+ /* Responsiveness for medium devices */
+ @media screen and (max-width:1024px){
+  header{
+    height: 135vh;
+    text-align: center;
+    justify-items: center;
+}  }
+ 
+
+
+  /* Responsiveness for small devices */
+  @media screen and (max-width:600px){
+    header{
+        height: 135vh;
+
+    }
+    .header__social,.scroll__down{
+        display: none;
+    }
+ }
+ 
+ 
